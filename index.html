@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aksen Halı ve Koltuk Yıkama | Premium Temizlik</title>
+<meta name="description" content="Aksen Halı ve Koltuk Yıkama – Sivas'ta premium halı, koltuk, stor perde yıkama hizmeti. Profesyonel ekip, hijyen garantisi, müşteri memnuniyeti.">
+
+<style>
+:root{
+  --primary:#3b82f6;
+  --primary-dark:#2563eb;
+  --primary-light:#60a5fa;
+  --secondary:#22c55e;
+  --secondary-dark:#16a34a;
+  --dark:#0f172a;
+  --dark-light:#1e293b;
+  --light:#f8fafc;
+  --light-gray:#1a1a1a;
+  --gray:#94a3b8;
+  --instagram: #E4405F;
+  --whatsapp: #25D366;
+  --shadow-sm:0 2px 4px rgba(0,0,0,0.3);
+  --shadow-md:0 4px 6px rgba(0,0,0,0.4);
+  --shadow-lg:0 10px 15px rgba(0,0,0,0.5);
+  --shadow-xl:0 20px 25px rgba(0,0,0,0.6);
+  --radius-sm:8px;
+  --radius-md:12px;
+  --radius-lg:16px;
+  --radius-xl:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family:'Segoe UI', 'Poppins', Arial, sans-serif;
+  background:#000000;
+  color:#e2e8f0;
+  overflow-x:hidden;
+  line-height:1.6;
+  font-size:16px;
+}
+
+/* BÜYÜK LOGOLAR - Sağ ve Sol */
+.site-logo {
+  position:fixed;
+  top:30px;
+  z-index:1000;
+  background:rgba(30, 30, 30, 0.98);
+  border-radius:50%;
+  padding:10px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.5);
+  width:140px;
+  height:140px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  transition:all 0.4s cubic-bezier(0.4,0,0.2,1);
+  border:3px solid #333;
+  overflow:hidden;
+  backdrop-filter:blur(10px);
+}
+
+.site-logo:hover {
+  transform:scale(1.08) rotate(5deg);
+  box-shadow:0 15px 40px rgba(0,0,0,0.7);
+  border-color:var(--primary);
+}
+
+.logo-left {
+  left:30px;
+}
+
+.logo-right {
+  right:30px;
+}
+
+.site-logo img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:50%;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transition:transform 0.4s ease;
+}
+
+.site-logo:hover img {
+  transform:scale(1.1);
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+  from {
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform:translateY(0);
+  }
+  50% {
+    transform:translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.05);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity:0;
+    transform:translateX(-50px);
+  }
+  to {
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity:0;
+    transform:translateX(50px);
+  }
+  to {
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+.animate-fade-in-up {
+  animation:fadeInUp 0.8s ease-out;
+}
+
+.animate-float {
+  animation:float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation:pulse 2s ease-in-out infinite;
+}
+
+.animate-slide-left {
+  animation:slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-right {
+  animation:slideInRight 0.8s ease-out;
+}
+
+.animate-gradient {
+  background:linear-gradient(270deg, #3b82f6, #22c55e, #60a5fa);
+  background-size:200% 200%;
+  animation:gradientShift 5s ease infinite;
+}
+
+.delay-1 {animation-delay:0.2s;}
+.delay-2 {animation-delay:0.4s;}
+.delay-3 {animation-delay:0.6s;}
+.delay-4 {animation-delay:0.8s;}
+
+/* Detay Sayfası Modal Stilleri */
+.modal-overlay {
+  display:none;
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.95);
+  z-index:10000;
+  opacity:0;
+  transition:opacity 0.4s ease;
+  backdrop-filter:blur(10px);
+}
+
+.modal-content {
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%) scale(0.95);
+  width:90%;
+  max-width:900px;
+  max-height:90vh;
+  background:#121212;
+  border-radius:var(--radius-xl);
+  padding:40px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transition:all 0.4s cubic-bezier(0.4,0,0.2,1);
+  box-shadow:0 25px 50px -12px rgba(0,0,0,0.8);
+  border:1px solid rgba(255,255,255,0.1);
+  color:#e2e8f0;
+}
+
+.modal-content.show {
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.modal-close {
+  position:absolute;
+  top:20px;right:20px;
+  background:#ef4444;
+  color:white;
+  width:44px;height:44px;
+  border-radius:50%;
+  border:none;
+  font-size:24px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all 0.3s ease;
+  z-index:10001;
+  box-shadow:var(--shadow-md);
+}
+
+.modal-close:hover {
+  background:#dc2626;
+  transform:rotate(90deg);
+}
+
+.modal-header {
+  margin-bottom:30px;
+  padding-right:50px;
+}
+
+.modal-header h3 {
+  font-size:2.2rem;
+  color:#f8fafc;
+  margin-bottom:10px;
+  line-height:1.2;
+  background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+.modal-header span {
+  display:inline-block;
+  background:linear-gradient(135deg, #1e3a8a, #1e40af);
+  color:#93c5fd;
+  padding:8px 20px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+  box-shadow:var(--shadow-sm);
+}
+
+.modal-body {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:start;
+}
+
+.modal-body img {
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-xl);
+  transition:transform 0.5s ease;
+  filter:brightness(0.9) contrast(1.1) saturate(1.1);
+}
+
+.modal-body img:hover {
+  transform:scale(1.02);
+}
+
+.modal-features {
+  list-style:none;
+  margin:20px 0;
+}
+
+.modal-features li {
+  margin-bottom:15px;
+  padding-left:32px;
+  position:relative;
+  font-size:16px;
+  color:#cbd5e1;
+  line-height:1.5;
+}
+
+.modal-features li:before {
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--secondary);
+  font-weight:bold;
+  font-size:18px;
+  background:rgba(34, 197, 94, 0.2);
+  width:24px;height:24px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.working-hours {
+  background:linear-gradient(135deg,#1e293b,#0f172a);
+  border-radius:var(--radius-lg);
+  padding:24px;
+  text-align:center;
+  margin-top:30px;
+  border:2px solid #334155;
+  box-shadow:var(--shadow-sm);
+  color:#cbd5e1;
+}
+
+.working-hours h4 {
+  font-size:1.5rem;
+  color:#f8fafc;
+  margin-bottom:10px;
+}
+
+.working-hours p {
+  font-size:1.25rem;
+  color:var(--primary-light);
+  font-weight:bold;
+  margin:10px 0;
+}
+
+.working-hours small {
+  color:#94a3b8;
+  font-size:14px;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  color:#fff;
+  padding:100px 20px 100px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  min-height:400px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+header::after{
+  content:"";
+  position:absolute;
+  bottom:-60px;left:0;
+  width:100%;height:120px;
+  background:#000000;
+  border-radius:100% 100% 0 0;
+  z-index:1;
+}
+header > * {
+  position:relative;
+  z-index:2;
+}
+header h1{
+  font-size:3.5rem;
+  letter-spacing:1px;
+  animation:slideInLeft 1s ease-out;
+  margin-bottom:20px;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+  color:#f8fafc;
+}
+header p{
+  font-size:1.25rem;
+  opacity:.95;
+  margin-top:10px;
+  animation:slideInRight 1s ease-out;
+  max-width:800px;
+  line-height:1.6;
+  color:#e2e8f0;
+}
+
+.container{
+  max-width:1280px;
+  margin:auto;
+  padding:0 20px;
+  position:relative;
+  z-index:2;
+}
+
+/* HERO BÖLÜMÜ */
+.hero{
+  margin-top:-40px;
+  background:#121212;
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-xl);
+  padding:60px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+  animation:fadeInUp 1s ease-out;
+  position:relative;
+  z-index:10;
+  border:1px solid rgba(255,255,255,0.05);
+}
+.hero-content{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+.hero h2{
+  font-size:2.8rem;
+  line-height:1.2;
+  color:#f8fafc;
+  margin:0;
+  background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero p{
+  font-size:1.125rem;
+  color:#cbd5e1;
+  line-height:1.7;
+  margin:0;
+}
+.hero .actions{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.hero .actions a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px 32px;
+  border-radius:var(--radius-md);
+  font-weight:700;
+  text-decoration:none;
+  font-size:16px;
+  transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+  min-width:170px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.actions a::after {
+  content:"";
+  position:absolute;
+  top:50%;left:50%;
+  width:5px;height:5px;
+  background:rgba(255,255,255,0.5);
+  border-radius:50%;
+  transform:translate(-50%,-50%) scale(1);
+  opacity:0;
+  transition:transform 0.6s, opacity 0.3s;
+}
+.actions a:active::after {
+  transform:translate(-50%,-50%) scale(20);
+  opacity:0.3;
+  transition:transform 0.6s, opacity 0.3s;
+}
+.actions .wp{
+  background:var(--secondary);
+  color:#fff;
+  box-shadow:0 4px 15px rgba(34, 197, 94, 0.4);
+}
+.actions .wp:hover{
+  background:var(--secondary-dark);
+  transform:translateY(-5px);
+  box-shadow:0 8px 25px rgba(34, 197, 94, 0.6);
+}
+.actions .ph{
+  background:var(--primary);
+  color:#fff;
+  box-shadow:0 4px 15px rgba(37, 99, 235, 0.4);
+}
+.actions .ph:hover{
+  background:var(--primary-dark);
+  transform:translateY(-5px);
+  box-shadow:0 8px 25px rgba(37, 99, 235, 0.6);
+}
+.actions .ig{
+  background:var(--instagram);
+  color:#fff;
+  box-shadow:0 4px 15px rgba(228, 64, 95, 0.4);
+}
+.actions .ig:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 25px rgba(228, 64, 95, 0.6);
+}
+.hero img{
+  width:100%;
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-xl);
+  transition:transform 0.5s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter:brightness(0.9) contrast(1.1) saturate(1.1);
+  object-fit:cover;
+  height:400px;
+}
+.hero img:hover{
+  transform:scale(1.03);
+}
+
+/* ÇALIŞMA SAATLERİ */
+.contact-hours {
+  background:linear-gradient(135deg,#1e293b,#0f172a);
+  border:2px solid var(--primary);
+  color:var(--primary-light);
+  padding:18px 28px;
+  border-radius:var(--radius-md);
+  display:flex;
+  align-items:center;
+  font-size:1.1rem;
+  font-weight:600;
+  margin-top:10px;
+  max-width:450px;
+  box-shadow:var(--shadow-sm);
+}
+.contact-hours:before {
+  content:"🕘";
+  margin-right:15px;
+  font-size:24px;
+}
+
+.section-title{
+  text-align:center;
+  margin:110px 0 60px;
+}
+.section-title h3{
+  font-size:2.8rem;
+  margin-bottom:15px;
+  background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  color:#f8fafc;
+}
+.section-title span{
+  display:inline-block;
+  margin-top:15px;
+  background:linear-gradient(135deg, #1e3a8a, #1e40af);
+  color:#93c5fd;
+  padding:10px 24px;
+  border-radius:999px;
+  font-size:15px;
+  font-weight:600;
+  box-shadow:var(--shadow-sm);
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:40px;
+}
+.service{
+  background:#121212;
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  box-shadow:var(--shadow-lg);
+  transition:all 0.4s cubic-bezier(0.4,0,0.2,1);
+  cursor:pointer;
+  position:relative;
+  border:1px solid rgba(255,255,255,0.05);
+}
+.service:hover{
+  transform:translateY(-12px);
+  box-shadow:var(--shadow-xl);
+  border-color:var(--primary-light);
+}
+.service img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  transition:transform 0.5s ease;
+  filter:brightness(0.9) contrast(1.1);
+}
+.service:hover img{
+  transform:scale(1.05);
+}
+.service div{
+  padding:30px;
+}
+.service h4{
+  font-size:1.5rem;
+  margin-bottom:15px;
+  color:#f8fafc;
+}
+.service p{
+  color:#cbd5e1;
+  margin-bottom:25px;
+  line-height:1.6;
+}
+.service .details-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color:white;
+  padding:12px 24px;
+  border-radius:var(--radius-md);
+  text-decoration:none;
+  font-weight:600;
+  transition:all 0.3s ease;
+  border:none;
+  cursor:pointer;
+  box-shadow:var(--shadow-sm);
+  width:100%;
+}
+.service .details-btn:hover{
+  background:linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-md);
+}
+
+.stats{
+  margin:120px 0;
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  color:#fff;
+  padding:80px 40px;
+  border-radius:var(--radius-xl);
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.stats > * {
+  position:relative;
+  z-index:1;
+}
+.stat h5{
+  font-size:3.5rem;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.stat p{
+  opacity:.95;
+  font-size:1.1rem;
+}
+
+/* YENİ EKLENEN ÖZELLİKLER BÖLÜMÜ */
+.features-section {
+  margin:120px 0;
+}
+
+.features-grid {
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:40px;
+}
+
+.feature-card {
+  background:#121212;
+  border-radius:var(--radius-xl);
+  padding:40px;
+  box-shadow:var(--shadow-lg);
+  transition:all 0.3s ease;
+  border-top:5px solid var(--primary);
+  border:1px solid rgba(255,255,255,0.05);
+  position:relative;
+  overflow:hidden;
+}
+
+.feature-card::before {
+  content:"";
+  position:absolute;
+  top:0;left:0;
+  width:5px;height:0;
+  background:var(--primary);
+  transition:height 0.3s ease;
+}
+
+.feature-card:hover::before {
+  height:100%;
+}
+
+.feature-card:hover {
+  transform:translateY(-10px);
+  box-shadow:var(--shadow-xl);
+}
+
+.feature-card h3 {
+  font-size:1.5rem;
+  color:#f8fafc;
+  margin-bottom:15px;
+  position:relative;
+  z-index:1;
+}
+
+.feature-card p {
+  font-size:1rem;
+  color:#cbd5e1;
+  line-height:1.6;
+  position:relative;
+  z-index:1;
+}
+
+.comments{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:40px;
+}
+.comment{
+  background:#121212;
+  border-radius:var(--radius-xl);
+  padding:35px;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+  transition:all 0.3s ease;
+  border:1px solid rgba(255,255,255,0.05);
+}
+.comment:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-xl);
+}
+.comment::before{
+  content:"★★★★★";
+  position:absolute;
+  top:30px;right:30px;
+  color:#facc15;
+  font-size:18px;
+}
+.comment h5{
+  font-size:1.25rem;
+  color:#f8fafc;
+  margin-bottom:5px;
+}
+.comment span{
+  font-size:14px;
+  color:#94a3b8;
+  display:block;
+  margin-bottom:15px;
+}
+.comment p{
+  margin-top:16px;
+  font-size:1rem;
+  color:#e2e8f0;
+  line-height:1.6;
+  font-style:italic;
+}
+
+.about{
+  margin:120px 0;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  padding:80px;
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-lg);
+  border:1px solid rgba(255,255,255,0.05);
+  color:#e2e8f0;
+}
+.about h3{
+  font-size:2.5rem;
+  margin-bottom:25px;
+  background:linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  color:#f8fafc;
+}
+.about p{
+  font-size:1.125rem;
+  color:#cbd5e1;
+  line-height:1.7;
+}
+
+footer{
+  background:linear-gradient(135deg, #0a0a0a, #121212);
+  color:#e2e8f0;
+  padding:60px 20px 40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+footer > * {
+  position:relative;
+  z-index:1;
+}
+.footer-social {
+  margin:30px 0;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.social-link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+  color:white;
+  font-size:24px;
+  text-decoration:none;
+  transition:all 0.3s ease;
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.social-link:hover {
+  transform:translateY(-5px) scale(1.1);
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.social-link.whatsapp:hover {
+  background:var(--whatsapp);
+}
+
+.social-link.instagram:hover {
+  background:var(--instagram);
+}
+
+.social-link.phone:hover {
+  background:var(--primary);
+}
+
+.float{
+  position:fixed;
+  right:24px;
+  width:64px;height:64px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+  z-index:9999;
+  transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+  border:none;
+  cursor:pointer;
+}
+.float:hover{
+  transform:translateY(-5px) scale(1.1);
+  box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+.float.wp{
+  bottom:110px;
+  background:var(--whatsapp);
+}
+.float.ph{
+  bottom:30px;
+  background:var(--primary);
+}
+.float.ig{
+  bottom:190px;
+  background: var(--instagram);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Scrollbar Stili */
+::-webkit-scrollbar {
+  width:10px;
+}
+::-webkit-scrollbar-track {
+  background:#1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background:var(--primary);
+  border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:var(--primary-dark);
+}
+
+/* Selection Stili */
+::selection {
+  background:rgba(59, 130, 246, 0.3);
+  color:#f8fafc;
+}
+
+/* Focus Stilleri */
+a:focus, button:focus {
+  outline:2px solid var(--primary);
+  outline-offset:2px;
+}
+
+/* Responsive Tasarım */
+@media(max-width:900px){
+  header{
+    padding:80px 20px 80px;
+  }
+  header h1{
+    font-size:2.5rem;
+  }
+  header p{
+    font-size:1.1rem;
+  }
+  .hero{
+    grid-template-columns:1fr;
+    padding:40px;
+    gap:40px;
+    margin-top:-20px;
+  }
+  .hero h2{
+    font-size:2.2rem;
+  }
+  .hero .actions{
+    flex-direction:column;
+  }
+  .hero .actions a{
+    width:100%;
+    min-width:unset;
+  }
+  .contact-hours{
+    max-width:100%;
+    font-size:1rem;
+  }
+  .modal-body{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .modal-content{
+    padding:30px 20px;
+    width:95%;
+  }
+  .modal-body img{
+    height:250px;
+  }
+  .services{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .features-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .feature-card{
+    padding:30px;
+  }
+  .about{
+    padding:50px 30px;
+  }
+  .about h3{
+    font-size:2rem;
+  }
+  .about p{
+    font-size:1rem;
+  }
+  .site-logo {
+    width:100px;
+    height:100px;
+    padding:8px;
+    top:20px;
+  }
+  .logo-left {
+    left:15px;
+  }
+  .logo-right {
+    right:15px;
+  }
+  .hero img {
+    height:300px;
+  }
+  .service img {
+    height:220px;
+  }
+  .float.ig {
+    bottom:170px;
+  }
+  .float.wp {
+    bottom:110px;
+  }
+  .float.ph {
+    bottom:30px;
+  }
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:2rem;
+  }
+  header p{
+    font-size:1rem;
+  }
+  .section-title h3{
+    font-size:2rem;
+  }
+  .hero{
+    padding:30px 20px;
+  }
+  .hero h2{
+    font-size:1.8rem;
+  }
+  .hero p{
+    font-size:1rem;
+  }
+  .stats{
+    padding:50px 20px;
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .stat h5{
+    font-size:2.8rem;
+  }
+  .comments{
+    grid-template-columns:1fr;
+  }
+  .comment{
+    padding:25px;
+  }
+  .site-logo {
+    width:80px;
+    height:80px;
+    padding:6px;
+    top:15px;
+  }
+  .logo-left {
+    left:10px;
+  }
+  .logo-right {
+    right:10px;
+  }
+  .hero img {
+    height:250px;
+  }
+  .service img {
+    height:200px;
+  }
+  .float {
+    width:56px;
+    height:56px;
+    font-size:26px;
+    right:16px;
+  }
+  .float.ig {
+    bottom:158px;
+  }
+  .float.wp {
+    bottom:98px;
+  }
+  .float.ph {
+    bottom:20px;
+  }
+}
+
+@media(min-width:901px) and (max-width:1200px) {
+  .site-logo {
+    width:120px;
+    height:120px;
+    padding:8px;
+  }
+  .container{
+    max-width:1100px;
+  }
+  .hero h2{
+    font-size:2.4rem;
+  }
+  .features-grid{
+    gap:30px;
+  }
+  .feature-card{
+    padding:30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- BÜYÜK SABİT LOGOLAR (Sağ ve Sol) -->
+<div class="site-logo logo-left animate-fade-in-up">
+  <img src="https://i.ibb.co/DfKfxXcf/aksenlogo.jpg" alt="Aksen Halı ve Koltuk Yıkama Logo">
+</div>
+
+<div class="site-logo logo-right animate-fade-in-up">
+  <img src="https://i.ibb.co/DfKfxXcf/aksenlogo.jpg" alt="Aksen Halı ve Koltuk Yıkama Logo">
+</div>
+
+<!-- Detay Modalları -->
+<div id="yorganModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('yorganModal')">×</button>
+    <div class="modal-header">
+      <h3>Yorgan Yıkama</h3>
+      <span>Premium Hijyenik Temizlik</span>
+    </div>
+    <div class="modal-body">
+      <img src="https://i.ibb.co/XZT7cPB3/blanket.jpg" alt="Yorgan Yıkama">
+      <div>
+        <p>Endüstriyel makinelerde hijyenik yıkama, özel kurutma sistemi ve güvenli teslimat ile yorganlarınızı tertemiz yapıyoruz.</p>
+        <ul class="modal-features">
+          <li>Endüstriyel yıkama makineleri</li>
+          <li>Özel kurutma sistemleri</li>
+          <li>Hijyenik paketleme</li>
+          <li>Kapıdan alım - kapıya teslim</li>
+          <li>Anti-bakteriyel uygulama</li>
+          <li>Koku giderme garantisi</li>
+        </ul>
+        <div class="working-hours">
+          <h4>Hizmet Saatlerimiz</h4>
+          <p>09:00 - 22:00</p>
+          <small>Her gün hizmetinizdeyiz</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="haliModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('haliModal')">×</button>
+    <div class="modal-header">
+      <h3>Halı Yıkama</h3>
+      <span>Derinlemesine Temizlik</span>
+    </div>
+    <div class="modal-body">
+      <img src="https://i.ibb.co/m5MkCMdh/carpet.jpg" alt="Halı Yıkama">
+      <div>
+        <p>Halı türüne özel yıkama ve kurutma sistemleriyle derinlemesine temizlik. Her türlü halı için özel çözümler.</p>
+        <ul class="modal-features">
+          <li>Halı türüne özel şampuanlar</li>
+          <li>Derin temizlik teknolojisi</li>
+          <li>Hızlı kurutma sistemi</li>
+          <li>Leke garantisi</li>
+          <li>Yün, sentetik, el dokuma uygun</li>
+          <li>Anti-alerjik uygulamalar</li>
+        </ul>
+        <div class="working-hours">
+          <h4>Hizmet Saatlerimiz</h4>
+          <p>09:00 - 22:00</p>
+          <small>Her gün hizmetinizdeyiz</small>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div id="koltukModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('koltukModal')">×</button>
+    <div class="modal-header">
+      <h3>Koltuk Yıkama</h3>
+      <span>Yerinde Profesyonel Temizlik</span>
+    </div>
+    <div class="modal-body">
+      <img src="https://i.ibb.co/9PZ52LK/sofa.jpg" alt="Koltuk Yıkama">
+      <div>
+        <p>Koltuklarınızı yerinde ve hijyenik şekilde profesyonel olarak temizliyoruz. Evinizin konforunda premium hizmet.</p>
+        <ul class="modal-features">
+          <li>Yerinde temizlik hizmeti</li>
+          <li>Kuru köpük temizleme</li>
+          <li>Buharlı dezenfeksiyon</li>
+          <li>Hızlı kuruma</li>
+          <li>Kumaş koruyucu uygulama</li>
+          <li>İnşaa, deri, süet uygun</li>
+        </ul>
+        <div class="working-hours">
+          <h4>Hizmet Saatlerimiz</h4>
+          <p>09:00 - 22:00</p>
+          <small>Her gün hizmetinizdeyiz</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="lekeModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('lekeModal')">×</button>
+    <div class="modal-header">
+      <h3>Leke & Koku Giderme</h3>
+      <span>Özel Çözümler</span>
+    </div>
+    <div class="modal-body">
+      <img src="https://i.ibb.co/m5MkCMdh/carpet.jpg" alt="Leke Giderme">
+      <div>
+        <p>En zor lekeler ve kokular için etkili çözümler sunuyoruz. Yılların birikimi ve uzmanlık ile hizmetinizdeyiz.</p>
+        <ul class="modal-features">
+          <li>Kahve, çay, şarap lekeleri</li>
+          <li>Yağ ve gres lekesi temizliği</li>
+          <li>Küf ve nem kokusu giderme</li>
+          <li>Hayvan kokuları için özel çözüm</li>
+          <li>İlaçlı dezenfeksiyon</li>
+          <li>Garantili leke çıkarma</li>
+        </ul>
+        <div class="working-hours">
+          <h4>Hizmet Saatlerimiz</h4>
+          <p>09:00 - 22:00</p>
+          <small>Her gün hizmetinizdeyiz</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="storModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('storModal')">×</button>
+    <div class="modal-header">
+      <h3>Stor Perde Yıkama</h3>
+      <span>Özel Perde Temizliği</span>
+    </div>
+    <div class="modal-body">
+      <img src="https://i.ibb.co/7NgZr0n6/curtain.jpg" alt="Stor Perde Yıkama">
+      <div>
+        <p>Stor perdeleriniz için özel temizlik sistemimizle hizmetinizdeyiz. Hassas yapıdaki stor perdelerinizi güvenle temizliyoruz.</p>
+        <ul class="modal-features">
+          <li>Stor perdeye özel temizlik</li>
+          <li>Hassas yıkama programları</li>
+          <li>Leke çıkarma garantisi</li>
+          <li>Toz ve alerjen giderme</li>
+          <li>Özel kurutma sistemleri</li>
+          <li>Montaj ve demontej hizmeti</li>
+          <li>Tüm stor perde çeşitleri</li>
+          <li>Kumaş koruyucu uygulama</li>
+        </ul>
+        <div class="working-hours">
+          <h4>Hizmet Saatlerimiz</h4>
+          <p>09:00 - 22:00</p>
+          <small>Her gün hizmetinizdeyiz</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ana İçerik -->
+<header>
+  <h1 class="animate-slide-left">Aksen Halı ve Koltuk Yıkama</h1>
+  <p class="animate-slide-right delay-1">Premium Temizlik • Hijyen Garantisi • Profesyonel Hizmet</p>
+</header>
+
+<div class="container">
+
+<section class="hero">
+  <div class="hero-content animate-fade-in-up">
+    <h2>Temizlikte Lüks ve Güveni Bir Arada Sunuyoruz</h2>
+    <p>Halı, koltuk ve stor perdelerinizi son teknoloji ekipmanlar, hijyenik ortam ve uzman kadromuzla profesyonel şekilde temizliyoruz. Kapıdan alım – kapıya teslim.</p>
+    
+    <div class="contact-hours">
+      🕘 Çalışma Saatlerimiz: 09:00 - 22:00 (Her Gün)
+    </div>
+    
+    <div class="actions">
+      <a href="https://wa.me/905419672206" class="wp animate-pulse-slow">💬 WhatsApp</a>
+      <a href="tel:05419672206" class="ph animate-pulse-slow delay-1">📞 Hemen Ara</a>
+      <a href="https://www.instagram.com/sivasaksenhaliyikama?igsh=MWxpc3JsanM5NW1zMg==" class="ig animate-pulse-slow delay-2" target="_blank">📷 Instagram</a>
+    </div>
+  </div>
+  
+  <img src="https://i.ibb.co/JWDgGhwT/hero.jpg" class="animate-float" alt="Premium Temizlik">
+</section>
+
+<div class="section-title">
+  <h3 class="animate-fade-in-up">Hizmetlerimiz</h3>
+  <span class="animate-fade-in-up delay-1">Kalite & Hijyen Standartları</span>
+</div>
+
+<section class="services">
+  <!-- HALI YIKAMA İLK SIRADA -->
+  <div class="service animate-fade-in-up" onclick="openModal('haliModal')">
+    <img src="https://i.ibb.co/JWDgGhwT/hero.jpg" alt="Halı Yıkama">
+    <div>
+      <h4>Halı Yıkama</h4>
+      <p>Halı türüne özel yıkama ve kurutma sistemleriyle derinlemesine temizlik.</p>
+      <button class="details-btn" onclick="openModal('haliModal')">Detayları Gör</button>
+    </div>
+  </div>
+  
+  <!-- YORGAN YIKAMA İKİNCİ SIRADA -->
+  <div class="service animate-fade-in-up delay-1" onclick="openModal('yorganModal')">
+    <img src="https://i.ibb.co/m5MkCMdh/carpet.jpg" alt="Yorgan Yıkama">
+    <div>
+      <h4>Yorgan Yıkama</h4>
+      <p>Endüstriyel makinelerde hijyenik yıkama, özel kurutma sistemi ve güvenli teslimat ile yorganlarınızı tertemiz yapıyoruz.</p>
+      <button class="details-btn" onclick="openModal('yorganModal')">Detayları Gör</button>
+    </div>
+  </div>
+  
+  <!-- KOLTUK YIKAMA ÜÇÜNCÜ SIRADA -->
+  <div class="service animate-fade-in-up delay-2" onclick="openModal('koltukModal')">
+    <img src="https://i.ibb.co/XZT7cPB3/blanket.jpg" alt="Koltuk Yıkama">
+    <div>
+      <h4>Koltuk Yıkama</h4>
+      <p>Koltuklarınızı yerinde ve hijyenik şekilde profesyonel olarak temizliyoruz.</p>
+      <button class="details-btn" onclick="openModal('koltukModal')">Detayları Gör</button>
+    </div>
+  </div>
+  
+  <!-- STOR PERDE YIKAMA -->
+  <div class="service animate-fade-in-up delay-2" onclick="openModal('storModal')">
+    <img src="https://i.ibb.co/7NgZr0n6/curtain.jpg" alt="Stor Perde Yıkama">
+    <div>
+      <h4>Stor Perde Yıkama</h4>
+      <p>Stor perdeleriniz için özel temizlik sistemimizle hizmetinizdeyiz.</p>
+      <button class="details-btn" onclick="openModal('storModal')">Detayları Gör</button>
+    </div>
+  </div>
+  
+  <!-- LEKE & KOKU GİDERME -->
+  <div class="service animate-fade-in-up delay-3" onclick="openModal('lekeModal')">
+    <img src="https://i.ibb.co/9PZ52LK/sofa.jpg" alt="Leke & Koku Giderme">
+    <div>
+      <h4>Leke & Koku Giderme</h4>
+      <p>En zor lekeler ve kokular için etkili çözümler sunuyoruz.</p>
+      <button class="details-btn" onclick="openModal('lekeModal')">Detayları Gör</button>
+    </div>
+  </div>
+</section>
+
+<section class="stats animate-fade-in-up">
+  <div class="stat">
+    <h5 class="animate-float">5.000+</h5>
+    <p>Temizlenen Halı</p>
+  </div>
+  <div class="stat">
+    <h5 class="animate-float delay-1">1.200+</h5>
+    <p>Mutlu Müşteri</p>
+  </div>
+  <div class="stat">
+    <h5 class="animate-float delay-2">%100</h5>
+    <p>Memnuniyet</p>
+  </div>
+</section>
+
+<!-- YENİ EKLENEN ÖZELLİKLER BÖLÜMÜ -->
+<section class="features-section">
+  <div class="features-grid">
+    <div class="feature-card animate-fade-in-up">
+      <h3>Derinlemesine Hijyen</h3>
+      <p>Halılarınız, antibakteriyel temizlik ürünleri ve profesyonel makinelerle derinlemesine temizlenerek hijyenik hale getirilir.</p>
+    </div>
+    
+    <div class="feature-card animate-fade-in-up delay-1">
+      <h3>Leke ve Koku Giderme</h3>
+      <p>Özel leke çıkarıcı çözümlerimiz sayesinde inatçı lekeler ve kötü kokular tamamen ortadan kaldırılır.</p>
+    </div>
+    
+    <div class="feature-card animate-fade-in-up delay-2">
+      <h3>Modern ve Güvenli Yıkama</h3>
+      <p>Son teknolojiye sahip yıkama sistemlerimiz, halılarınızı yıpratmadan ve renklerini soldurmadan temizler.</p>
+    </div>
+    
+    <div class="feature-card animate-fade-in-up delay-3">
+      <h3>Ücretsiz Servis Hizmeti</h3>
+      <p>Halılarınızı adresinizden alıp, tertemiz şekilde teslim ediyoruz. Zahmetsiz ve hızlı hizmetin keyfini çıkarın!</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-title">
+  <h3 class="animate-fade-in-up">Müşteri Yorumları</h3>
+  <span class="animate-fade-in-up delay-1">Google & Gerçek Deneyimler</span>
+</div>
+
+<section class="comments">
+  <div class="comment animate-fade-in-up">
+    <h5>Ahmet K.</h5>
+    <span>Sivas</span>
+    <p>Gerçekten premium bir hizmet. Halılar tertemiz geldi, paketleme ve teslimat çok profesyoneldi.</p>
+  </div>
+  <div class="comment animate-fade-in-up delay-1">
+    <h5>Elif Y.</h5>
+    <span>Sivas</span>
+    <p>Koltuklar ilk günkü gibi oldu. Çok memnun kaldım, fiyat performans oranı harika.</p>
+  </div>
+  <div class="comment animate-fade-in-up delay-2">
+    <h5>Mehmet T.</h5>
+    <span>Sivas</span>
+    <p>Zamanında teslim ve profesyonel ekip. Özellikle leke çıkarma konusunda uzmanlar. Tavsiye ederim.</p>
+  </div>
+</section>
+
+<section class="about animate-fade-in-up">
+  <h3>Neden Aksen?</h3>
+  <p>Aksen Halı ve Koltuk Yıkama olarak Sivas'ta premium temizlik anlayışıyla hizmet veriyoruz. 10 yılı aşkın tecrübemiz, son teknoloji ekipmanlarımız ve uzman kadromuzla hijyen, kalite ve müşteri memnuniyetini en üst seviyede tutmayı hedefliyoruz. Her gün 09:00 - 22:00 saatleri arasında hizmetinizdeyiz.</p>
+</section>
+
+</div>
+
+<footer>
+  <p><strong>Aksen Halı ve Koltuk Yıkama</strong></p>
+  <p>Kaan Yavuz • 0541 967 22 06</p>
+  <p>🕘 Çalışma Saatleri: 09:00 - 22:00 (Her Gün)</p>
+  
+  <div class="footer-social">
+    <a href="https://wa.me/905419672206" class="social-link whatsapp" target="_blank">💬</a>
+    <a href="tel:05419672206" class="social-link phone">📞</a>
+    <a href="https://www.instagram.com/sivasaksenhaliyikama?igsh=MWxpc3JsanM5NW1zMg==" class="social-link instagram" target="_blank">📷</a>
+  </div>
+  
+  <p>© 2025 Tüm Hakları Saklıdır</p>
+</footer>
+
+<a href="https://www.instagram.com/sivasaksenhaliyikama?igsh=MWxpc3JsanM5NW1zMg==" class="float ig animate-float" target="_blank">📷</a>
+<a href="https://wa.me/905419672206" class="float wp animate-float delay-1">💬</a>
+<a href="tel:05419672206" class="float ph animate-float delay-2">📞</a>
+
+<script>
+// Modal fonksiyonları
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  const modalContent = modal.querySelector('.modal-content');
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+  
+  // Trigger reflow
+  modal.offsetHeight;
+  
+  setTimeout(() => {
+    modal.style.opacity = '1';
+    modalContent.classList.add('show');
+  }, 10);
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  const modalContent = modal.querySelector('.modal-content');
+  
+  modal.style.opacity = '0';
+  modalContent.classList.remove('show');
+  
+  setTimeout(() => {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }, 300);
+}
+
+// Modal dışına tıklayınca kapatma
+document.querySelectorAll('.modal-overlay').forEach(modal => {
+  modal.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeModal(this.id);
+    }
+  });
+});
+
+// Escape tuşu ile modal kapatma
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay').forEach(modal => {
+      if (modal.style.display === 'block') {
+        closeModal(modal.id);
+      }
+    });
+  }
+});
+
+// Scroll animasyonları
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fade-in-up');
+    }
+  });
+}, observerOptions);
+
+// Tüm animasyonlu elementleri gözle
+document.querySelectorAll('.service, .comment, .stat, .section-title h3, .section-title span, .feature-card').forEach(el => {
+  observer.observe(el);
+});
+
+// Logo scroll animasyonu KALDIRILDI - Logolar sabit
+
+// Görseller yüklendikten sonra kalite optimizasyonu
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    img.addEventListener('load', function() {
+      this.style.opacity = '1';
+    });
+    
+    // Hata durumunda yedek görsel
+    img.addEventListener('error', function() {
+      console.log('Görsel yüklenemedi:', this.src);
+      // Yedek görsel gösterebiliriz
+      this.src = 'https://via.placeholder.com/400x300?text=Görsel+Yüklenemedi';
+    });
+  });
+  
+  // Butonlar için ripple efekti
+  document.querySelectorAll('.actions a, .details-btn, .float').forEach(button => {
+    button.addEventListener('click', function(e) {
+      // Ripple efekti oluştur
+      const ripple = document.createElement('span');
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+      
+      ripple.style.cssText = `
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        width: ${size}px;
+        height: ${size}px;
+        top: ${y}px;
+        left: ${x}px;
+        pointer-events: none;
+      `;
+      
+      this.style.position = 'relative';
+      this.style.overflow = 'hidden';
+      this.appendChild(ripple);
+      
+      // Ripple'ı temizle
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  });
+});
+
+// CSS'e ripple animasyonu ekle
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+`;
+document.head.appendChild(style);
+
+// Yükleme ekranı
+window.addEventListener('load', function() {
+  setTimeout(() => {
+    document.body.style.opacity = '1';
+    document.body.style.transition = 'opacity 0.5s ease';
+  }, 100);
+});
+</script>
+</body>
+</html>
